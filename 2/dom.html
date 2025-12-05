@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polisa domu — Ubespieczalnia Grzegorz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pro.css">
+  <style>
+    .hero-photo { display:block; border-radius: 12px; overflow:hidden; border: 1px solid var(--gray-100); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .hero-photo img { width: 100%; height: 420px; object-fit: cover; display:block; }
+    .hero-photo svg { width: 100%; height: 420px; display:block; }
+    .page { padding: 40px 0; }
+    .page h1 { color: var(--blue-800); margin: 0 0 10px; }
+    .page p { color: #334155; margin: 0 0 16px; }
+    .checklist { list-style: none; padding: 0; display: grid; gap: 8px; }
+    .checklist li::before { content: '✔'; color: var(--blue-600); font-weight:700; margin-right:8px; }
+    .back { display:inline-block; margin-top: 14px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </a>
+      <nav class="nav-links" aria-label="Główne">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page">
+      <h1>Polisa domu</h1>
+      <p>Ochrona mienia, instalacji i odpowiedzialności cywilnej w życiu prywatnym.</p>
+      <figure class="hero-photo">
+        <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pastelowy dom w słoneczny dzień">
+          <rect x="0" y="0" width="800" height="420" fill="#eaf2ff"/>
+          <circle cx="680" cy="80" r="40" fill="#ffd166"/>
+          <ellipse cx="160" cy="90" rx="70" ry="24" fill="#ffffff" opacity="0.9"/>
+          <ellipse cx="240" cy="110" rx="90" ry="28" fill="#ffffff" opacity="0.85"/>
+          <rect x="0" y="320" width="800" height="100" fill="#b7e4c7"/>
+          <rect x="300" y="220" width="220" height="140" rx="10" fill="#9ec8ff" stroke="#7fb3f5"/>
+          <polygon points="290,220 420,140 540,220" fill="#e35d6a"/>
+          <rect x="330" y="260" width="40" height="40" rx="6" fill="#ffffff" stroke="#cfe8ff"/>
+          <rect x="380" y="260" width="40" height="40" rx="6" fill="#ffffff" stroke="#cfe8ff"/>
+          <rect x="470" y="260" width="36" height="70" rx="8" fill="#1f2937"/>
+          <rect x="120" y="350" width="120" height="12" fill="#8dd3b7"/>
+          <rect x="620" y="350" width="80" height="12" fill="#8dd3b7"/>
+        </svg>
+      </figure>
+
+      <h2>Co potrzebne do polisy</h2>
+      <ul class="checklist">
+        <li>Adres nieruchomości i powierzchnia</li>
+        <li>Rok budowy, rodzaj zabudowy</li>
+        <li>Wartość wyposażenia i mienia</li>
+        <li>Zabezpieczenia (drzwi, alarm, monitoring)</li>
+        <li>Zakres ochrony (mury, ruchomości, OC)</li>
+      </ul>
+      <a class="link back" href="index.html">← Powrót</a>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-contrast">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-copy">© 2025 Ubespieczalnia Grzegorz</div>
+    </div>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.nav-toggle');
+    const l=document.querySelector('.nav-links');
+    if(t&&l){t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});}
+  </script>
+</body>
+</html>

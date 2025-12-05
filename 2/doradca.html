@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Certyfikowany doradca — Ubespieczalnia Grzegorz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </a>
+      <nav class="nav-links" aria-label="Główne">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page">
+      <h1>Certyfikowany doradca</h1>
+      <p class="lead">Pracujemy w oparciu o certyfikaty branżowe i cykliczne szkolenia produktowe. Dzięki temu rekomendujemy polisy, które realnie odpowiadają na Twoje potrzeby.</p>
+
+      <h2>Jak pracujemy</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Analiza potrzeb</h3>
+          <p>Rozmawiamy o ryzykach, budżecie i oczekiwanym poziomie ochrony.</p>
+          <ul class="checklist">
+            <li>Wywiad i krótkie ankiety</li>
+            <li>Ocena ryzyka i priorytety</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Porównanie ofert</h3>
+          <p>Zestawiamy warianty wielu TU, tłumacząc różnice w OWU.</p>
+          <ul class="checklist">
+            <li>Zakres, wyłączenia, sumy</li>
+            <li>Cena i zniżki</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Rekomendacja</h3>
+          <p>Dajemy jasną propozycję z mocnymi stronami i ryzykami.</p>
+          <ul class="checklist">
+            <li>Transparentne uzasadnienie</li>
+            <li>Alternatywy na przyszłość</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Proces doradczy</h2>
+      <ol class="steps">
+        <li>Krótka rozmowa i zebranie danych</li>
+        <li>Analiza ryzyk i przygotowanie porównania</li>
+        <li>Spotkanie z omówieniem wariantów</li>
+        <li>Wybór polisy i formalności</li>
+        <li>Opieka po zakupie i wsparcie w szkodach</li>
+      </ol>
+
+      <h2>Dowody jakości</h2>
+      <ul class="checklist">
+        <li>Aktualne uprawnienia i szkolenia TU</li>
+        <li>Setki wdrożonych polis rocznie</li>
+        <li>Pozytywne opinie klientów</li>
+        <li>Przejrzysta komunikacja i dokumenty</li>
+      </ul>
+      <a class="link" href="index.html">← Powrót</a>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-contrast">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-copy">© 2025 Ubespieczalnia Grzegorz</div>
+    </div>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.nav-toggle');
+    const l=document.querySelector('.nav-links');
+    if(t&&l){t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});}
+  </script>
+</body>
+</html>

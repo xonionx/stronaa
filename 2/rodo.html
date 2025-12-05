@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RODO zgodne — Ubespieczalnia Grzegorz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </a>
+      <nav class="nav-links" aria-label="Główne">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page">
+      <h1>RODO zgodne</h1>
+      <p class="lead">Dbamy o bezpieczeństwo danych zgodnie z RODO i najlepszymi praktykami bezpieczeństwa. Przetwarzamy wyłącznie informacje niezbędne do zawarcia i obsługi umowy ubezpieczenia.</p>
+
+      <h2>Podstawy przetwarzania</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cel</h3>
+          <p>Zawarcie umowy, wycena, obsługa roszczeń i kontakt.</p>
+          <div class="tags">
+            <span class="tag">Umowa</span>
+            <span class="tag">Obowiązek prawny</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Zakres danych</h3>
+          <p>Identyfikacyjne, kontaktowe, dotyczące pojazdu i ryzyka.</p>
+          <div class="tags">
+            <span class="tag">Minimalizacja</span>
+            <span class="tag">Adekwatność</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Okres</h3>
+          <p>Przez czas trwania umowy i wymagany prawem okres archiwizacji.</p>
+          <div class="tags">
+            <span class="tag">Retencja</span>
+            <span class="tag">Archiwizacja</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Twoje prawa</h2>
+      <ul class="checklist">
+        <li>Dostęp do danych i ich kopii</li>
+        <li>Sprostowanie i uzupełnienie</li>
+        <li>Usunięcie i ograniczenie przetwarzania</li>
+        <li>Przenoszenie danych</li>
+        <li>Sprzeciw wobec przetwarzania</li>
+      </ul>
+
+      <h2>Bezpieczeństwo</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Szyfrowanie</h3>
+          <p>Bezpieczne kanały komunikacji i zaszyfrowane kopie danych.</p>
+        </div>
+        <div class="card">
+          <h3>Dostęp</h3>
+          <p>Tylko upoważnione osoby, rejestr i kontrola dostępów.</p>
+        </div>
+        <div class="card">
+          <h3>Powierzenie</h3>
+          <p>Umowy powierzenia z TU i partnerami zgodnie z RODO.</p>
+        </div>
+      </div>
+
+      <p>Masz pytania dotyczące danych? Napisz: <a class="link" href="mailto:rodo@ubespieczalnia-grzegorz.pl">rodo@ubespieczalnia-grzegorz.pl</a>.</p>
+      <a class="link" href="index.html">← Powrót</a>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-contrast">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-copy">© 2025 Ubespieczalnia Grzegorz</div>
+    </div>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.nav-toggle');
+    const l=document.querySelector('.nav-links');
+    if(t&&l){t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});}
+  </script>
+</body>
+</html>
