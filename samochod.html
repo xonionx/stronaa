@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Polisa samochodu — Ubespieczalnia Grzegorz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pro.css">
+  <style>
+    .hero-photo { display:block; border-radius: 12px; overflow:hidden; border: 1px solid var(--gray-100); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+    .hero-photo img { width: 100%; height: 420px; object-fit: cover; display:block; }
+    .hero-photo svg { width: 100%; height: 420px; display:block; }
+    .page { padding: 40px 0; }
+    .page h1 { color: var(--blue-800); margin: 0 0 10px; }
+    .page p { color: #334155; margin: 0 0 16px; }
+    .checklist { list-style: none; padding: 0; display: grid; gap: 8px; }
+    .checklist li::before { content: '✔'; color: var(--blue-600); font-weight:700; margin-right:8px; }
+    .back { display:inline-block; margin-top: 14px; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </a>
+      <nav class="nav-links" aria-label="Główne">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page">
+      <h1>Polisa samochodu</h1>
+      <p>OC, AC, NNW i assistance dopasowane do stylu jazdy.</p>
+      <figure class="hero-photo">
+        <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pastelowy samochód na drodze w dzień">
+          <rect x="0" y="0" width="800" height="420" fill="#eaf2ff"/>
+          <circle cx="680" cy="80" r="40" fill="#ffd166"/>
+          <ellipse cx="180" cy="90" rx="80" ry="26" fill="#ffffff" opacity="0.9"/>
+          <rect x="0" y="330" width="800" height="90" fill="#0b1f5e"/>
+          <rect x="0" y="372" width="800" height="6" fill="#e5e7eb"/>
+          <rect x="260" y="300" width="280" height="50" rx="16" fill="#2563eb"/>
+          <rect x="300" y="260" width="200" height="50" rx="20" fill="#3b82f6"/>
+          <circle cx="310" cy="350" r="22" fill="#111827"/>
+          <circle cx="490" cy="350" r="22" fill="#111827"/>
+          <rect x="340" y="270" width="120" height="28" rx="8" fill="#93c5fd"/>
+        </svg>
+      </figure>
+
+      <h2>Co potrzebne do polisy</h2>
+      <ul class="checklist">
+        <li>Numer rejestracyjny i VIN</li>
+        <li>Rok produkcji, pojemność, paliwo</li>
+        <li>Historia szkód i zniżki</li>
+        <li>Sposób użytkowania (prywatnie/firmowo)</li>
+        <li>Zakres (OC, AC, NNW, assistance)</li>
+      </ul>
+
+      <h2>Ubezpieczenie OC</h2>
+      <p>Obowiązkowe ubezpieczenie OC samochodu chroni kierowcę przed kosztami szkód wyrządzonych osobom trzecim. Pokrywa m.in. naprawę uszkodzeń innych pojazdów i mienia, koszty leczenia poszkodowanych oraz zadośćuczynienia. OC nie obejmuje szkód we własnym pojeździe kierowcy.</p>
+      <p>Polisa OC jest wymagana ustawowo — brak ważnego OC skutkuje karą finansową i obowiązkiem pokrycia szkody z własnej kieszeni. Standardowo działa na terenie Polski i większości krajów Europy (z możliwością rozszerzenia o Zieloną Kartę).</p>
+
+      <h2>Autocasco (AC)</h2>
+      <p>Ubezpieczenie AC zabezpiecza Twój samochód przed zdarzeniami losowymi oraz kradzieżą. Obejmuje szkody powstałe niezależnie od sprawcy i pozwala naprawić lub rozliczyć pojazd po szkodzie częściowej czy całkowitej.</p>
+      <ul class="checklist">
+        <li>Kradzież pojazdu i jego elementów</li>
+        <li>Zdarzenia losowe: pożar, grad, powódź, huragan, drzewo</li>
+        <li>Wandalizm, zarysowania, szkody parkingowe</li>
+        <li>Kolizje z innymi pojazdami i zwierzętami</li>
+        <li>Szkoda całkowita — wypłata wartości pojazdu wg warunków</li>
+      </ul>
+      <p>Ważne opcje w AC:</p>
+      <ul class="checklist">
+        <li>Naprawa bezgotówkowa w ASO lub kosztorys</li>
+        <li>Stała suma ubezpieczenia (brak spadku wartości w roku)</li>
+        <li>Brak amortyzacji części lub oryginalne części</li>
+        <li>Udział własny i franszyza integralna — dopasuj do budżetu</li>
+        <li>Ochrona zniżek po pierwszej szkodzie</li>
+      </ul>
+
+      <h2>Inne ubezpieczenia samochodu</h2>
+      <ul class="checklist">
+        <li>NNW kierowcy i pasażerów — świadczenia po wypadku</li>
+        <li>Assistance — holowanie, pojazd zastępczy, nocleg, organizacja powrotu</li>
+        <li>Szyby — naprawa/wymiana szyb bez utraty zniżek</li>
+        <li>Opony — wymiana po uszkodzeniu, pomoc na drodze</li>
+        <li>Ochrona zniżek OC/AC — zachowanie historii po szkodzie</li>
+        <li>GAP — ochrona utraty wartości pojazdu (szczególnie dla aut w leasingu)</li>
+        <li>Zielona Karta — rozszerzenie terytorialne na wybrane kraje</li>
+      </ul>
+
+      <a class="link back" href="index.html">← Powrót</a>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-contrast">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-copy">© 2025 Ubespieczalnia Grzegorz</div>
+    </div>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.nav-toggle');
+    const l=document.querySelector('.nav-links');
+    if(t&&l){t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});}
+  </script>
+</body>
+</html>

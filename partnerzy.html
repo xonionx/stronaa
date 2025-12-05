@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Partner wiodących TU — Ubespieczalnia Grzegorz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <svg class="brand-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </a>
+      <nav class="nav-links" aria-label="Główne">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Otwórz menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page">
+      <h1>Partner wiodących TU</h1>
+      <p class="lead">Porównujemy szeroki wachlarz ofert i negocjujemy warunki, aby uzyskać najlepszą ochronę w Twoim budżecie.</p>
+
+      <h2>Korzyści współpracy</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Szeroki wybór</h3>
+          <p>Wiele TU i wariantów — łatwo dopasować zakres do potrzeb.</p>
+          <ul class="checklist">
+            <li>OC, AC, NNW, assistance</li>
+            <li>Pakiety i zniżki</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Lepsze warunki</h3>
+          <p>Negocjacje i korzystne zapisy w OWU, gdzie to możliwe.</p>
+          <ul class="checklist">
+            <li>Stała suma, brak amortyzacji</li>
+            <li>Ochrona zniżek</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Szybsza likwidacja</h3>
+          <p>Bezpośrednie kanały kontaktu i pomoc w całym procesie.</p>
+          <ul class="checklist">
+            <li>ASO lub kosztorys</li>
+            <li>Koordynacja napraw</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Oferta dla firm</h2>
+      <ul class="checklist">
+        <li>Polisy dla flot i pojazdów specjalnych</li>
+        <li>Pakiety assistance i zniżki flotowe</li>
+        <li>Umowy wieloletnie i stała opieka doradcza</li>
+      </ul>
+      <a class="link" href="index.html">← Powrót</a>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-contrast">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z" fill="#1e3a8a"/></svg>
+        <span class="brand-name">Ubespieczalnia Grzegorz</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#produkty">Produkty</a>
+        <a href="index.html#dlaczego">Dlaczego my</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="footer-copy">© 2025 Ubespieczalnia Grzegorz</div>
+    </div>
+  </footer>
+
+  <script>
+    const t=document.querySelector('.nav-toggle');
+    const l=document.querySelector('.nav-links');
+    if(t&&l){t.addEventListener('click',()=>{const o=l.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});}
+  </script>
+</body>
+</html>
